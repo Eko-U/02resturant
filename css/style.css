@@ -61,10 +61,7 @@ html {
       font-size: 50%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 37.5%; } }
-  @media only screen and (max-width: 37.5em) {
-    html {
-      font-size: 31.25%; } }
+      font-size: 43.75%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 70%; } }
@@ -98,7 +95,7 @@ body {
   animation: moveInRight 1.5s ease-out; }
   @media only screen and (max-width: 56.25em) {
     .heading-primary--sub {
-      font-size: 3rem; } }
+      font-size: 2.7rem; } }
 
 .heading-secondary {
   display: inline-block;
@@ -126,10 +123,10 @@ body {
   text-transform: uppercase; }
   @media only screen and (max-width: 56.25em) {
     .heading-tertiary {
-      font-size: 3.45rem; } }
+      font-size: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-tertiary {
-      font-size: 3.7rem; } }
+      font-size: 2.83rem; } }
 
 .u-margin-top-sm {
   margin-top: 2rem; }
@@ -161,10 +158,10 @@ body {
 .paragraph {
   font-size: 1.6rem;
   line-height: 1.7; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .paragraph--small {
-      font-size: 3rem !important; } }
-  @media only screen and (max-width: 37.5em) {
+      font-size: 2rem !important; } }
+  @media only screen and (max-width: 56.25em) {
     .paragraph--smaller {
       font-size: 2.4rem !important; } }
 
