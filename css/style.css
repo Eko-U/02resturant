@@ -96,9 +96,9 @@ body {
   color: #e2b70d;
   margin-bottom: 2rem;
   animation: moveInRight 1.5s ease-out; }
-  @media only screen and (max-width: 28.125em) {
+  @media only screen and (max-width: 56.25em) {
     .heading-primary--sub {
-      font-size: 1rem; } }
+      font-size: 3rem; } }
 
 .heading-secondary {
   display: inline-block;
@@ -420,7 +420,11 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .paragraph--small {
-    font-size: 3rem; } }
+    font-size: 3.2rem; } }
+
+@media only screen and (max-width: 56.25em) {
+  .paragraph--smaller {
+    font-size: 2.5rem; } }
 
 .navigation {
   width: 120rem;
