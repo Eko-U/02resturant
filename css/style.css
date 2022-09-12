@@ -297,9 +297,11 @@ body {
     .food-menu__price-now {
       color: #f1c40f;
       font-size: 2rem; }
+  .food-menu__order {
+    display: flex;
+    justify-content: space-between; }
   .food-menu__btn {
     display: inline-block;
-    margin-right: 4rem;
     box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2); }
     .food-menu__btn:hover {
       color: #e2b70d; }
@@ -317,9 +319,9 @@ body {
       vertical-align: middle;
       transform: rotate(0) scale(0.9);
       transition: all .3s; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 56.25em) {
         .food-menu__like ion-icon {
-          font-size: 5rem; } }
+          font-size: 4rem; } }
     .food-menu__like:hover {
       transform: translateY(-0.5rem); }
     .food-menu__like:hover > ion-icon {
@@ -328,9 +330,15 @@ body {
 
 .footer {
   padding: 5rem 5rem 3rem 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding: 3rem 3rem 1.5rem 3rem; } }
   .footer__logo {
     border-bottom: 0.2rem solid #e2b70d;
     padding-bottom: 1.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__logo {
+        padding-bottom: 1rem; } }
     .footer__logo .heading-secondary {
       text-align: left; }
   .footer__left {
@@ -345,7 +353,11 @@ body {
       margin-bottom: 2rem; }
       @media only screen and (max-width: 37.5em) {
         .footer__item:not(:last-child) {
-          margin-bottom: 1rem; } }
+          margin-bottom: .7rem; } }
+  .footer__heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase; }
   .footer__link {
     font-size: 1.5rem;
     color: #474747;
@@ -355,6 +367,9 @@ body {
     .footer__link:hover {
       color: #000;
       font-weight: 400; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__link {
+        font-size: 1.7rem; } }
   .footer__social-icon {
     cursor: pointer;
     height: 6rem;
@@ -405,9 +420,15 @@ body {
         width: 100% !important; } }
     @media only screen and (max-width: 56.25em) {
       .row [class^="col-"] {
-        margin-bottom: 5rem !important; } }
+        margin-bottom: 3rem !important; } }
+    @media only screen and (max-width: 37.5em) {
+      .row [class^="col-"] {
+        margin-bottom: 1.5rem; } }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0; } }
   .row:after {
     content: "";
     display: table;
@@ -524,6 +545,9 @@ body {
   padding: 10rem 5rem;
   background-color: #f7f7f7;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .about-us {
+      padding: 7rem 3rem; } }
   .about-us__details {
     padding: 3rem;
     background-color: #fff;
@@ -547,6 +571,9 @@ body {
 
 .section-countries {
   padding: 10rem 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-countries {
+      padding: 7rem 3rem; } }
 
 .state {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
@@ -564,9 +591,15 @@ body {
 .section-menu {
   padding: 10rem 5rem;
   background-color: #f7f7f7; }
+  @media only screen and (max-width: 56.25em) {
+    .section-menu {
+      padding: 7rem 3rem; } }
 
 .section-review {
   padding: 10rem 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-review {
+      padding: 7rem 3rem; } }
 
 .review {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
@@ -653,9 +686,16 @@ body {
 .section-app {
   padding: 10rem 5rem;
   background-color: #f7f7f7; }
+  @media only screen and (max-width: 56.25em) {
+    .section-app {
+      padding: 7rem 3rem; } }
   .section-app .heading-secondary {
     text-align: left; }
-  .section-app__details *:not(:last-child) {
-    margin-bottom: .7rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section-app__details *:not(:last-child) {
+      margin-bottom: 2rem; } }
   .section-app__details .paragraph {
     margin-bottom: 6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section-app__details .paragraph {
+        margin-bottom: 3rem; } }
