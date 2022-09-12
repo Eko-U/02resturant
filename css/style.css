@@ -118,10 +118,9 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase; }
-
-.paragraph {
-  font-size: 1.6rem;
-  line-height: 1.7; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-tertiary {
+      font-size: 4rem; } }
 
 .u-margin-top-sm {
   margin-top: 2rem; }
@@ -418,13 +417,15 @@ body {
   left: 25%;
   transform: translate(-25%, -50%); }
 
-@media only screen and (max-width: 56.25em) {
-  .paragraph--small {
-    font-size: 3.2rem; } }
-
-@media only screen and (max-width: 56.25em) {
-  .paragraph--smaller {
-    font-size: 2.5rem; } }
+.paragraph {
+  font-size: 1.6rem;
+  line-height: 1.7; }
+  @media only screen and (max-width: 37.5em) {
+    .paragraph--small {
+      font-size: 3.2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .paragraph--smaller {
+      font-size: 2.5rem; } }
 
 .navigation {
   width: 120rem;
