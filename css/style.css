@@ -320,6 +320,9 @@ body {
       vertical-align: middle;
       transform: rotate(0) scale(0.9);
       transition: all .3s; }
+      @media only screen and (max-width: 37.5em) {
+        .food-menu__like ion-icon {
+          font-size: 5rem; } }
     .food-menu__like:hover {
       transform: translateY(-0.5rem); }
     .food-menu__like:hover > ion-icon {
