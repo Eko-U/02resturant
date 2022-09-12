@@ -418,9 +418,9 @@ body {
   left: 25%;
   transform: translate(-25%, -50%); }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 56.25em) {
   .paragraph--small {
-    font-size: 2.2rem; } }
+    font-size: 3rem; } }
 
 .navigation {
   width: 120rem;
