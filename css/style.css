@@ -116,11 +116,17 @@ body {
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
       font-size: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 4rem; } }
 
 .heading-tertiary {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 500;
   text-transform: uppercase; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-tertiary {
+      font-size: 3.45rem; } }
   @media only screen and (max-width: 37.5em) {
     .heading-tertiary {
       font-size: 3.7rem; } }
@@ -151,6 +157,16 @@ body {
 
 .center {
   text-align: center; }
+
+.paragraph {
+  font-size: 1.6rem;
+  line-height: 1.7; }
+  @media only screen and (max-width: 37.5em) {
+    .paragraph--small {
+      font-size: 3rem !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .paragraph--smaller {
+      font-size: 2.4rem !important; } }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -199,6 +215,9 @@ body {
   margin-right: 2rem;
   vertical-align: middle;
   border: 1px solid transparent; }
+  @media only screen and (max-width: 56.25em) {
+    .form-input {
+      border: 1px solid #f1c40f; } }
   .form-input:focus {
     outline: none;
     border: 1px solid #f1c40f; }
@@ -317,7 +336,7 @@ body {
   .footer__left {
     padding: 0 2rem 0 0;
     border-right: 0.2rem solid #f1c40f; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .footer__left {
         border: none; } }
   .footer__item {
@@ -422,16 +441,6 @@ body {
   transform: translate(-50%, -50%);
   left: 25%;
   transform: translate(-25%, -50%); }
-
-.paragraph {
-  font-size: 1.6rem;
-  line-height: 1.7; }
-  @media only screen and (max-width: 37.5em) {
-    .paragraph--small {
-      font-size: 3rem !important; } }
-  @media only screen and (max-width: 56.25em) {
-    .paragraph--smaller {
-      font-size: 2.8rem !important; } }
 
 .navigation {
   width: 120rem;
