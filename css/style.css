@@ -343,6 +343,9 @@ body {
     list-style: none; }
     .footer__item:not(:last-child) {
       margin-bottom: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__item:not(:last-child) {
+          margin-bottom: 1rem; } }
   .footer__link {
     font-size: 1.5rem;
     color: #474747;
