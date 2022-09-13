@@ -1,0 +1,66 @@
+.u-margin-top-sm {
+  margin-top: 2rem;
+}
+
+.u-margin-top-bg {
+  margin-top: 4rem;
+}
+
+.u-margin-top-lg {
+  margin-top: 6rem;
+}
+
+.u-margin-top-xlg {
+  margin-top: 8rem;
+}
+
+.u-margin-bottom-sm {
+  margin-bottom: 2rem;
+}
+
+.u-margin-bottom-bg {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-lg {
+  margin-bottom: 6rem;
+}
+
+.u-margin-bottom-xlg {
+  margin-bottom: 8rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  line-height: 1.7;
+
+
+  &--small {
+    @include responsive(tab-port) {
+      font-size: 2.4rem !important;
+    }
+
+    @include responsive(tab-port) {
+      font-size: 2.1rem !important;
+    }
+  }
+
+  &--smaller {
+    @include responsive(tab-port) {
+      font-size: 2rem !important;
+    }
+    @include responsive(tab-port) {
+      font-size: 1.9rem !important;
+    }
+  }
+
+  &--big {}
+
+  &--large {}
+
+  &--larger {}
+}

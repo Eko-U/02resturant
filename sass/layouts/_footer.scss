@@ -1,0 +1,120 @@
+.footer {
+  padding: 5rem 5rem 3rem 5rem;
+
+  @include responsive(phone) {
+    padding: 3rem 3rem 1.5rem 3rem;
+  }
+
+  &__logo {
+
+    border-bottom: .2rem solid $color-primary-dark;
+    padding-bottom: 1.5rem;
+
+    @include responsive(phone) {
+        padding-bottom: 1rem;
+    }
+
+    .heading-secondary {
+      text-align: left;
+    }
+  }
+
+  &__left {
+    padding: 0 2rem 0 0;
+    border-right: .2rem solid $color-primary;
+
+    @include responsive(tab-port) {
+      border: none;
+    }
+  }
+
+  &__item {
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+
+      @include responsive(phone) {
+        margin-bottom: .7rem;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    font-size: $font-size-nav;
+    color: $color-grey-text-dark;
+    text-decoration: none;
+    transition: all .1s;
+    font-weight: 300;
+
+    &:hover {
+      color: $color-black;
+      font-weight: 400;
+    }
+
+    @include responsive(tab-port) {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__social {
+
+    &-icon {
+      cursor: pointer;
+      height: 6rem;
+      width: 6rem;
+      border-radius: 50%;
+      box-shadow: $box-shadow-hover;
+      display: inline-block;
+      transition: all .3s;
+      text-align: center;
+      position: relative;
+      font-size: 3.5rem;
+
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      &:hover {
+        box-shadow: $box-shadow-hover-sm;
+        
+      }
+
+      &--instagram,
+      &--facebook,
+      &--twitter,
+      &--linkedin {
+        @include absCenter;
+        backface-visibility: hidden;
+      }
+
+      &:hover > &--instagram {
+        color: #405de6;
+      }
+
+      &:hover > &--facebook {
+        color: #4267b2;
+      }
+
+      &:hover > &--twitter {
+        color: #1da1f2;
+      }
+
+      &:hover > &--linkedin {
+        color: #1da1f2;
+      }
+    }
+  }
+
+  //EDITED THE WIDTH OF THE ROW TO TAKE A HIGHER WIDTH
+  &-row {
+    max-width: 160rem !important;
+  }
+}

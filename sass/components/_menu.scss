@@ -1,0 +1,129 @@
+.food-menu {
+  cursor: pointer;
+  font-size: $default-font-size;
+
+  position: relative;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  box-shadow: $default-box-shadow;
+
+  &__rating {
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: $color-white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .5rem 3rem .5rem 2rem;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    transition: all .2s;
+
+    &:hover {
+      font-weight: 500;
+      box-shadow: $box-shadow-hover;
+      background-color: $color-primary-light;
+      color: $color-white;
+    }
+  }
+
+  &__img {
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    width: 100%;
+    height: auto;
+  }
+
+  &__details {
+    padding: 2rem 3.5rem;
+
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__time {
+    position: relative;
+    display: inline-block;
+    margin-left: 1.5rem;
+
+    &::before {
+      content: "";
+      height: .5rem;
+      width: .5rem;
+      border-radius: 50%;
+      background-color: $color-primary-dark;
+      position: absolute;
+      top: 50%;
+      left: -1.5rem;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__text {
+
+    & > *:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__price {
+    font-weight: 500;
+    
+    &-cancel {
+      font-weight: 300;
+      margin-right: 1rem;
+      color: $color-grey-text;
+    }
+
+    &-now {
+      color: $color-primary;
+      font-size: 2rem;
+    }
+  }
+
+  &__order {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    display: inline-block;
+    box-shadow: $box-shadow-hover-sm;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+
+  &__like {
+    display: inline-block;
+    border-radius: 20rem;
+    box-shadow: $box-shadow-hover-sm;
+    vertical-align: middle;
+    text-align: center;
+    padding: 1rem;
+    transition: all .2s;
+
+    & ion-icon {
+      display: inline-block;
+      font-size: 3rem;
+      vertical-align: middle;
+      transform: rotate(0) scale(.9);
+      transition: all .3s;
+
+      @include responsive(tab-port) {
+        font-size: 4rem;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-.5rem);
+    }
+
+    &:hover > ion-icon {
+      color: $color-primary-dark;
+      transform: rotate(30deg) scale(1);
+    }
+  }
+}

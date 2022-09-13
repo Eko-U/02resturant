@@ -1,0 +1,80 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: $color-grey-text;
+}
+
+
+
+
+.col-1-of-2 {
+  width: calc((100%/2) - 6rem);
+}
+
+.heading-primary {
+
+  span {
+    display: block;
+  }
+
+  &--main {
+    font-size: 8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $color-white;
+    animation: moveInLeft 1.5s ease-out;
+  }
+
+  &--sub {
+    font-size: 3rem;
+    font-weight: 300;
+    color: $color-primary-dark;
+    margin-bottom: 2rem;
+    animation: moveInRight 1.5s ease-out;
+
+    @include responsive(tab-port) {
+      font-size: 2rem;
+    }
+  }
+
+}
+
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-image: linear-gradient(rgba($color-primary-light, 8), rgba($color-primary-dark, .8));
+  color: transparent;
+  background-clip: text;
+  text-shadow: $default-box-shadow;
+
+  &:hover {
+    transform: scale(1.2) skew(2deg, 2deg);
+    cursor: pointer;
+    text-shadow: $box-shadow-hover
+  }
+
+  @include responsive(tab-port) {
+    font-size: 4rem;
+  }
+  
+  @include responsive(phone) {
+    font-size: 3.2rem;
+  }
+
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  @include responsive(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include responsive(phone) {
+    font-size: 2.83rem;
+  }
+}

@@ -1,0 +1,129 @@
+.navigation {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .8rem 2rem;
+  height: 7rem;
+  //logo style
+  &__logo {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-decoration: uppercase;
+    color: $color-primary-dark;
+    cursor: pointer;
+
+    @include responsive(tab-land) {
+      font-size: 4rem;
+    }
+  }
+
+  &__mobile {
+    display: none !important;
+    @include responsive(tab-land) {
+      display: inline-block !important;
+    }
+  }
+
+  &__burger {
+    vertical-align: middle;
+    font-size: 3.5rem;
+    color: $color-primary;
+    cursor: pointer;
+  }
+
+  &__nav {
+    @include responsive(tab-land) {
+      display: none !important;
+    }
+  }
+
+  //list style for the navigation list
+  &__list {
+    list-style: none;
+  }
+
+  //list style for the navigation item
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 7rem;
+    }
+  }
+
+  &__link {
+
+    &:not(:last-child) {
+      margin-right: 6rem;
+    }
+
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: $font-size-nav;
+      font-weight: 400;
+      color: $color-grey-text;
+      font-size: $font-size-nav;
+      padding-bottom: 1rem;
+      border-bottom: .2rem solid transparent;
+      transition: border-bottom .2s;
+    }
+
+    &:hover,
+    &:active {
+      color: rgba($color-black, .7);
+      font-weight: 500;
+      padding-bottom: 1rem;
+      border-bottom: .2rem solid $color-primary-dark;
+    }
+  }
+
+  &__icon {
+    padding: 1.5rem 2.5rem;
+    box-shadow: $default-box-shadow;
+    border-radius: 10rem;
+    text-align: center;
+    display: inline-block;
+
+    @include responsive(tab-land) {
+      display: none !important;
+    }
+    
+
+    .nav-icon {
+      
+      font-size: 2.7rem;
+      line-height: 1.7;
+      vertical-align: middle;
+      margin-top: -.5rem;
+      cursor: pointer;
+      display: inline-block;
+
+      @include responsive(tab-port) {
+        display: none;
+      }
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+
+      &:last-child {
+        color: red;
+        color: $color-primary-dark;
+      }
+
+      &:first-child {
+        transition: all .2s;
+
+
+        &:hover {
+          color: $color-primary-dark;
+          transform: translateX(1rem) rotate(-10deg);
+        }
+      }
+    }
+
+  }
+}

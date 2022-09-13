@@ -1,0 +1,231 @@
+.about-us {
+  padding: 10rem 5rem;
+  background-color: #f7f7f7;
+  text-align: center;
+
+  @include responsive(tab-port) {
+    padding: 7rem 3rem;
+  }
+
+  &__details {
+    padding: 3rem;
+    background-color: $color-white;
+    box-shadow: $default-box-shadow;
+    border-radius: .5rem;
+    transform: scale(.98);
+    transition: all .2s;
+
+    & > * {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-1rem) scale(1);
+      box-shadow: $box-shadow-hover;
+    }
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__icon {
+    text-align: center;
+
+    & > ion-icon {
+      font-size: 8rem;
+      color: $color-primary-dark;
+      font-weight: 300;
+    }
+  }
+}
+
+
+.section-countries {
+  padding: 10rem 5rem;
+  @include responsive(tab-port) {
+    padding: 7rem 3rem;
+  }
+}
+
+.state {
+  box-shadow: $default-box-shadow;
+  padding: 2rem 4rem;
+  border-radius: 10rem;
+  text-align: center;
+  font-size: $default-font-size;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    transform: translateY(-.5rem);
+    box-shadow: $box-shadow-hover;
+  }
+}
+
+.section-menu {
+  padding: 10rem 5rem;
+  @include responsive(tab-port) {
+    padding: 7rem 3rem;
+  }
+  background-color: $color-grey-light-1;
+}
+
+.section-review {
+  padding: 10rem 5rem;
+  @include responsive(tab-port) {
+    padding: 7rem 3rem;
+  }
+}
+
+.review {
+  box-shadow: $default-box-shadow;
+  padding: 2rem 4rem;
+  cursor: pointer;
+  transform: translateY(0) scale(.98);
+  transition: transform .2s;
+  border-radius: .2rem;
+
+  & > *:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  & > *:nth-child(2) {
+    font-size: 2.5rem;
+    display: inline-block;
+    padding-bottom: 1rem;
+    border-bottom: .3rem solid $color-primary-dark;
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+    transform: translateY(-1rem) scale(1);
+  }
+
+  &__img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 1.5rem;
+  }
+
+  &__text {
+    text-align: center;
+    @include responsive(phone) {
+      text-align: left;
+    }
+
+    &::before {
+      content: "\201C";
+      
+    }
+  }
+
+  &__rating {
+    font-size: 2rem;
+    vertical-align: middle;
+
+    &-star {
+      color: transparent;
+      background-color: red;
+      background-clip: text;
+    }
+
+    &-number {
+      font-weight: 500;
+      color: $color-primary-dark;
+    }
+  }
+
+  &__direction {
+    text-align: center;
+
+    div {
+      font-size: 3.5rem;
+      display: inline-block;
+      height: 6rem;
+      width: 6rem;
+      // text-align: center;
+      border-radius: 50%;
+      // padding: 2rem;
+      box-shadow: $box-shadow-hover-sm;
+      cursor: pointer;
+      transform: translateY(0) scale(.9);
+      transition: all .2s;
+      position: relative;
+
+      &:not(:last-child) { margin-right: 2rem }
+
+      &:hover {
+        transform: translateY(1rem) scale(1);
+      }
+
+      & > * {
+        @include absCenter;
+      }
+    }
+
+    &--gold {
+      background-color: $color-primary-dark;
+      border: .2rem solid $color-white;
+      color: $color-white;
+    }
+
+    &--white {
+      border: .2rem solid $color-primary-light;
+    }
+  }
+}
+
+.app {
+ 
+  &__icon {
+    font-size: 3rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+  &__google-store {
+    background-color: $color-primary;
+    color: $color-white !important;
+    font-weight: 500;
+  }
+
+  &__app-store {
+    font-weight: 500;
+  }
+}
+
+.section-app {
+  padding: 10rem 5rem;
+  background-color: $color-grey-light-1;
+
+  @include responsive(tab-port) {
+    padding: 7rem 3rem;
+  }
+
+  & .heading-secondary {
+    text-align: left;
+  }
+
+
+  &__details {
+
+    @include responsive(phone) {
+      & *:not(:last-child) {
+          margin-bottom: 2rem;
+      }
+    }
+
+    & .paragraph {
+      margin-bottom: 6rem;
+
+      @include responsive(phone) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

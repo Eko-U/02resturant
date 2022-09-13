@@ -1,0 +1,35 @@
+$color-primary-light: #f2c81f;
+$color-primary: #f1c40f;
+$color-primary-dark: #e2b70d;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-grey-light-1: #f7f7f7;
+
+
+
+
+//TEXT
+$color-grey-text: #555;
+$color-grey-text-dark: #474747;
+
+$default-font-size: 1.6rem;
+$font-size-nav: 1.5rem;
+$font-size-small: 1.4rem;
+
+
+
+//GRID
+$grid-row-width: 114rem;
+$gutter-horizontal: 5rem;
+$gutter-vertical: 5rem;
+
+$gutter-vertical-sm: 3rem;
+$gutter-horizontal-sm: 3rem;
+
+
+//BOX SHADOW
+$default-box-shadow: 0 .2rem 1rem rgba($color-black, .1);
+$box-shadow-hover: 0 .4rem 2rem rgba($color-black, .2);
+$box-shadow-hover-sm: 0 .4rem 1rem rgba($color-black, .2);
