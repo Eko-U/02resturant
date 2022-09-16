@@ -202,9 +202,24 @@
   &__app-store {
     font-weight: 500;
   }
+
+  &__photo {
+    margin-left: 8rem;
+    height: auto;
+    position: absolute;
+    top: -7rem;
+    // left: 0;
+
+    @include responsive(tab-port) {
+      position: relative;
+      margin-left: 7rem;
+    }
+  }
 }
 
 .section-app {
+  position: relative;
+  
   padding: 10rem 5rem;
   background-color: $color-grey-light-1;
 
@@ -231,6 +246,10 @@
       @include responsive(phone) {
         margin-bottom: 3rem;
       }
+    }
+
+    @include responsive(tab-port) {
+      margin-bottom: 5rem;
     }
   }
 }
