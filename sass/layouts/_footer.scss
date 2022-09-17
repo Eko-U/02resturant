@@ -6,9 +6,9 @@
   }
 
   &__logo { 
-    width: 30%;
+    width: 35%;
 
-    @include responsive(tab-port) {
+    @include responsive(phone) {
       width: 45%;
     }
   }

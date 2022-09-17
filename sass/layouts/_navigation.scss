@@ -6,12 +6,12 @@
 
   //logo style
   &__logo {
-    width: 27%;
+    width: 8rem;
     cursor: pointer;
     margin-left: 2rem;
 
-    @include responsive(tab-port) {
-      width: 45%;
+    @include responsive(phone) {
+      width: 10rem;
     }
   }
 
@@ -71,10 +71,8 @@
 
     &:hover,
     &:active {
-      color: rgba($color-black, .7);
+      color: $color-primary-dark;
       font-weight: 500;
-      padding-bottom: 1rem;
-      border-bottom: .2rem solid $color-primary-dark;
     }
   }
 
