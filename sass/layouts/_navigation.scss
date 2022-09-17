@@ -6,9 +6,13 @@
 
   //logo style
   &__logo {
-    width: 25%;
+    width: 27%;
     cursor: pointer;
     margin-left: 2rem;
+
+    @include responsive(tab-port) {
+      width: 35%;
+    }
   }
 
   &__mobile {

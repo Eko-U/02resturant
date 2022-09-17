@@ -5,7 +5,13 @@
     padding: 3rem 3rem 1.5rem 3rem;
   }
 
-  &__logo { width: 30%; }
+  &__logo { 
+    width: 30%;
+
+    @include responsive(tab-port) {
+      width: 40%;
+    }
+  }
 
   &__left {
     padding: 0 2rem 0 0;
