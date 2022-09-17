@@ -5,23 +5,11 @@
     padding: 3rem 3rem 1.5rem 3rem;
   }
 
-  &__logo {
-
-    border-bottom: .2rem solid $color-primary-dark;
-    padding-bottom: 1.5rem;
-
-    @include responsive(phone) {
-        padding-bottom: 1rem;
-    }
-
-    .heading-secondary {
-      text-align: left;
-    }
-  }
+  &__logo { width: 30%; }
 
   &__left {
     padding: 0 2rem 0 0;
-    border-right: .2rem solid $color-primary;
+    border-right: .2rem dotted $color-primary;
 
     @include responsive(tab-port) {
       border: none;
@@ -116,5 +104,7 @@
   //EDITED THE WIDTH OF THE ROW TO TAKE A HIGHER WIDTH
   &-row {
     max-width: 160rem !important;
+    padding: 4rem 0 0 0;
+    border-top: .2rem dotted $color-primary-light;
   }
 }
