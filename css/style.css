@@ -343,7 +343,7 @@ body {
     width: 30%; }
     @media only screen and (max-width: 56.25em) {
       .footer__logo {
-        width: 40%; } }
+        width: 45%; } }
   .footer__left {
     padding: 0 2rem 0 0;
     border-right: 0.2rem dotted #f1c40f; }
