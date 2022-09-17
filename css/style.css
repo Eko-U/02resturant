@@ -481,7 +481,7 @@ body {
     margin-left: 2rem; }
     @media only screen and (max-width: 56.25em) {
       .navigation__logo {
-        width: 35%; } }
+        width: 45%; } }
   .navigation__mobile {
     display: none !important; }
     @media only screen and (max-width: 75em) {
@@ -489,8 +489,9 @@ body {
         display: inline-block !important; } }
   .navigation__burger {
     vertical-align: middle;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     color: #f1c40f;
+    margin-right: 3rem;
     cursor: pointer; }
   @media only screen and (max-width: 75em) {
     .navigation__nav {
