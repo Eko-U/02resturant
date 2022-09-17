@@ -205,20 +205,21 @@
 
   &__photo {
     margin-left: 8rem;
-    height: auto;
-    position: absolute;
-    top: -7rem;
-    // left: 0;
+    width: 50%;
 
     @include responsive(tab-port) {
-      position: relative;
-      margin-left: 7rem;
+      width: 45%;
+      margin-left: 12rem;
+    }
+
+    @include responsive(phone) {
+      width: 35%;
     }
   }
 }
 
 .section-app {
-  position: relative;
+  // position: relative;
   
   padding: 10rem 5rem;
   background-color: $color-grey-light-1;
@@ -233,6 +234,7 @@
 
 
   &__details {
+    margin-top: 10rem;
 
     @include responsive(phone) {
       & *:not(:last-child) {

@@ -701,16 +701,16 @@ body {
 
 .app__photo {
   margin-left: 8rem;
-  height: auto;
-  position: absolute;
-  top: -7rem; }
+  width: 50%; }
   @media only screen and (max-width: 56.25em) {
     .app__photo {
-      position: relative;
-      margin-left: 7rem; } }
+      width: 45%;
+      margin-left: 12rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .app__photo {
+      width: 35%; } }
 
 .section-app {
-  position: relative;
   padding: 10rem 5rem;
   background-color: #f7f7f7; }
   @media only screen and (max-width: 56.25em) {
@@ -718,14 +718,16 @@ body {
       padding: 7rem 3rem; } }
   .section-app .heading-secondary {
     text-align: left; }
-  @media only screen and (max-width: 37.5em) {
-    .section-app__details *:not(:last-child) {
-      margin-bottom: 2rem; } }
-  .section-app__details .paragraph {
-    margin-bottom: 6rem; }
+  .section-app__details {
+    margin-top: 10rem; }
     @media only screen and (max-width: 37.5em) {
-      .section-app__details .paragraph {
-        margin-bottom: 3rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .section-app__details {
-      margin-bottom: 5rem; } }
+      .section-app__details *:not(:last-child) {
+        margin-bottom: 2rem; } }
+    .section-app__details .paragraph {
+      margin-bottom: 6rem; }
+      @media only screen and (max-width: 37.5em) {
+        .section-app__details .paragraph {
+          margin-bottom: 3rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .section-app__details {
+        margin-bottom: 5rem; } }
