@@ -210,7 +210,7 @@ body {
 
 .form-input {
   font-family: 'Monsterant', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   padding: 1.5rem 2rem;
   width: 80%;
   border: none;
@@ -220,7 +220,7 @@ body {
   vertical-align: middle;
   border: 1px solid transparent; }
   .form-input::placeholder {
-    font-size: 1.7rem; }
+    font-size: 1.4rem; }
   @media only screen and (max-width: 56.25em) {
     .form-input {
       border: 1px solid #f1c40f; } }

@@ -1,7 +1,7 @@
 .form {
   &-input {
     font-family: 'Monsterant', sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     padding: 1.5rem 2rem;
     width: 80%;
     border: none;
@@ -12,7 +12,7 @@
     border: 1px solid transparent;
 
     &::placeholder {
-      font-size: 1.7rem;
+      font-size: 1.4rem;
     }
 
     @include responsive(tab-port) {
